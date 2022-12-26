@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+
+
+.bg-hero {
+    background: linear-gradient(105.82deg, #34B6FC 30.31%, #00DEFC 92.59%);
+}
+
+.tagline {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 68px;
+}
+
+.title-card{
+    color: #34B6FC;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}

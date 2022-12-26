@@ -1,0 +1,67 @@
+/* Start New Template */
+.close {
+    float: right;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000 !important;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    border: 0 !important;
+    -webkit-appearance: none !important;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+}
+
+a {
+    color: #2196f3;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.text-navbar {
+    color: #424242 !important;
+}
+/* End New Template */
+.page-header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: none !important;
+    background: #348fe2 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;    
+}
+
+.modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.select2-container .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+    min-height: 34px;
+    height: auto !important;
+    border-color: #e2e7eb !important;
+}
+
+.bg-danger {
+    background-color: #ff5b57;
+    color: #fff !important;
+}

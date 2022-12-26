@@ -1,0 +1,31 @@
+.widget17 {
+  background: transparent;
+  border-width: $widget17-border-width;
+  border-style: dashed;
+  cursor: pointer;
+  @include theme-variant("light") {
+    border-color: $widget17-border-color-light;
+  }
+  @include theme-variant("dark") {
+    border-color: $widget17-border-color-dark;
+  }
+
+  &:active,
+  &:hover {
+    @include theme-variant("light") {
+      background: $widget17-hover-bg-light;
+    }
+    @include theme-variant("dark") {
+      background: $widget17-hover-bg-dark;
+    }
+  }
+
+  > .portlet-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: $widget17-padding;
+  }
+}

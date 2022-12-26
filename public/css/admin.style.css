@@ -1,0 +1,41 @@
+.page-header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: none !important;
+    background: #348fe2 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;    
+}
+
+.modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.select2-container .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+    min-height: 34px;
+    height: auto !important;
+    border-color: #e2e7eb !important;
+}
+
+.bg-danger {
+    background-color: #ff5b57;
+    color: #fff !important;
+}

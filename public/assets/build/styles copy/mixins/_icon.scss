@@ -1,0 +1,26 @@
+@mixin icon($pseudo: before, $weight: 900) {
+  &:#{$pseudo} {
+    display: inline-block;
+    position: relative;
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: $weight;
+    @content;
+  }
+}
+@mixin icon-size($size) {
+  > i {
+    font-size: $size;
+  }
+
+  > svg {
+    width: $size;
+    height: $size;
+  }
+}
+@mixin icon-style() {
+  > svg,
+  > i {
+    @content;
+  }
+}

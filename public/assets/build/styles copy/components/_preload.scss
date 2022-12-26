@@ -1,0 +1,69 @@
+.preload {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: $zindex-preload;
+  @include theme-variant("light") {
+    background: $preload-bg-light;
+  }
+  @include theme-variant("dark") {
+    background: $preload-bg-dark;
+  }
+}
+
+.preload-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preload-spinner {
+  width: $preload-spinner-dimension !important;
+  height: $preload-spinner-dimension !important;
+}
+
+.preload-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: $preload-message-padding-y $preload-message-padding-x;
+  border-width: $preload-message-border-width;
+  border-style: solid;
+  @include border-radius($preload-message-border-radius);
+  @include theme-variant("light") {
+    border-color: $preload-message-border-color-light;
+  }
+  @include theme-variant("dark") {
+    border-color: $preload-message-border-color-dark;
+  }
+
+  > [class*="spinner"] {
+    margin-right: $preload-message-spinner-spacer;
+  }
+}
+
+.preload-text {
+  font-size: $preload-message-text-font-size;
+  font-weight: $preload-message-text-font-weight;
+  @include theme-variant("light") {
+    color: $preload-message-text-color-light;
+  }
+  @include theme-variant("dark") {
+    color: $preload-message-text-color-dark;
+  }
+}
+// Hide body scrollbar
+body.preload-active:not(.preload-hide) {
+  overflow: hidden;
+}
+// Hide preload
+body.preload-hide {
+  .preload {
+    display: none;
+  }
+}
