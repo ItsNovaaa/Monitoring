@@ -1,5 +1,6 @@
 # Requirements
 1. PHP Version 7.4+
+3. Framework Laravel
 2. MYSQL Ver 8.0.30 for Win64 on x86_64 (MySQL Community Server - GPL)
 3. Composer
 4. Web Browser
